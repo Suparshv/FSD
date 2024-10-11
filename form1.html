@@ -1,27 +1,91 @@
-<html>
-    <head>
-        <title>Form</title>
-    </head>
-    <body>
-        
-        <form action="h1.html" method="get">
-            <fieldset>
-                <legend>Signup</legend>
-                <table>
-                <tr> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="h1.html" method="get">
+        <fieldset>
+            <legend>Signup</legend>
+            <table>
+                <tr>
                     <td><label>Name</label></td>
                     <td><input type="text" name="'fname" required placeholder="enter name"></td>
                 </tr>
                 <tr>
                     <td><label>Password</label></td>
-                    <td><input type="password" name="pwd" placeholder="enter name" required="@" minlength="3" maxlength="20"></td>
+                    <td><input type="password" name="pwd" placeholder="enter name" required="@" minlength="3"
+                            maxlength="20"></td>
                 </tr>
                 <tr>
                     <td><input type="submit"></td>
                     <td><input type="reset"></td>
                 </tr>
-        </table>
+                <tr>
+                    <td>Gender</td>
+                    <td><label><input type="radio" name="gender" value="male">male</label>
+                        <label><input type="radio" name="gender" value="female">female</label>
+                        <label><input type="radio" name="gender" value="other">other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Subject</td>
+                    <td><label><input type="checkbox" name="sub" value="FSD">FSD</label>
+                        <label><input type="checkbox" name="sub" value="PS">PS</label>
+                        <label><input type="checkbox" name="sub" value="DE">DE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AGE<input type="number" name="age" step="1"></td>
+                </tr>
+                <tr>
+                    <td>
+                        Price
+                    </td>
+                    <td><input type="range" min="0" max="1000" step="1" oninput="num.value=this.value" value="0">
+                        <input type="text" disabled id="num" size="40">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload CV</td>
+                    <td><input type="file" multiple><br>
+                        search<input type="search" value="q"><br>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>FEEDBACK<input type="image" src="images.png" height="50" width="50"><br></td>
+                </tr>
+                <tr>
+                    <td>DATE<input type="date" min="2024-10-11"><br></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="Area">
+                            <option selected hidden>Select area</option>
+                            <optgroup label="Ahmedabad">
+                                <option>Maninagar</option>
+                                <option>Bopal</option>
+                                <option>Satellite</option>
+                            </optgroup>
+                            <optgroup label="Gandhinagar">
+                                <option>Sector-1</option>
+                                <option>Sector-2</option>
+                                <option>Sector-3</option>
+                            </optgroup>
+                        </select>
+
+                    </td>
+
+                </tr>
+            </table>
         </fieldset>
-        </form>
-    </body>
+    </form>
+</body>
+
 </html>
