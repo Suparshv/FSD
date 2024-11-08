@@ -1,0 +1,5 @@
+.a{background-color:aqua;text-indent: 10px;text-decoration: none;text-transform: none;text-align: left;font-family: fantasy,papyrus;font-size: 20%;font-weight:lighter;font-style: italic;font-variant: small-caps;font-size: larger;}
+.b{background-color:blueviolet;text-indent: 10px;text-decoration: underline double pink 2px;text-transform: uppercase;text-align: right;font-family:sans-serif;}
+.c{background-color:cornflowerblue;text-indent: 30px;text-decoration: overline;text-transform:lowercase;text-align: center;font-family: monospace;}
+.d{background-color:turquoise;text-indent: 20%;text-decoration: underline overline;text-transform: capitalize;text-align: justify;font-family: cursive;}
+.e{background-color:palegreen;text-indent: -2em;text-decoration: line-through;text-transform:none;font-family: fantasy;}
