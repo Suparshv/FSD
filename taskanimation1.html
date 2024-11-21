@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: darkred;
+            animation-name: animate;
+            animation-duration: 7s;
+            animation-delay: 1s;
+            animation-direction: normal;
+            transform: rotate(360);
+            position: absolute;
+            color: white;
+            text-align: center;
+        }
+
+        @keyframes animate {
+            0% {
+                top: 0px;
+                left: 0px
+            }
+
+            50% {
+                transform: rotate(180deg);
+                top: 300px;
+                left: 300px;
+            }
+
+            100% {
+                transform: rotate(360deg);
+                top: 0px;
+                left: 600px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>HI</div>
+</body>
+
+</html>

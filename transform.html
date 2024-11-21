@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <style>
+        div {
+            height: 100px;
+            width: 200px;
+            float: left;
+            border: 1px solid blue;
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            background-color: aqua;
+        }
+
+        .p1:hover {
+            transform: rotate(50deg);
+            background-color: tomato;
+            transition-property: rotate(50deg);
+        }
+
+        .p2:hover {
+            transform: rotatex(180deg);
+            background-color: tomato;
+            transition-property: rotatex(180deg);
+        }
+
+        .p3:hover {
+            transform: rotatey(180deg);
+            background-color: tomato;
+            transition-property: rotatey(180deg);
+        }
+
+        .p4:hover {
+            transform: skew(20deg, 0deg);
+            background-color: tomato;
+            transition-property: skew(20deg, 0deg);
+        }
+
+        .p5:hover {
+            transform: scale(2, 0.5);
+            background-color: tomato;
+            transition-property: scale(2, 0.5);
+
+        }
+
+        .p6:hover {
+            transform: scalex(2);
+            background-color: tomato;
+            transition-property: scalex(2);
+        }
+
+        .p7:hover {
+            transform: scaley(2);
+            background-color: tomato;
+            transition-property: scaley(2);
+        }
+
+        .p8:hover {
+            transform: translate(50px, 100px);
+            background-color: tomato;
+            transition-property: translate(50px, 100px);
+        }
+
+        .p9:hover {
+            transform: skewX(30deg);
+            background-color: tomato;
+            transition-property: skewX(30deg);
+        }
+
+        .p10:hover {
+            transform: skewY(30deg);
+            background-color: tomato;
+            transition-property: skewY(30deg);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="p1">Rotate 50deg</div>
+    <div class="p2">Rotate x 180deg</div>
+    <div class="p3">Rotate y 180deg</div>
+    <div class="p4">skew(20deg,0deg</div>
+    <div class="p5">scale(2,0.5)</div>
+    <div class="p6">scalex(2)</div>
+    <div class="p7">scaley(2)</div>
+    <div class="p8">translate(50px,100px)</div>
+    <div class="p8">skewX(30deg)</div>
+    <div class="p10">skewY(30deg)</div>
+
+</body>
+
+</html>
