@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <style>
+        .pagination {
+            display: flex;
+        }
+
+        .pagination a {
+            text-decoration: none;
+            color: white;
+            background-color: goldenrod;
+            padding: 20px;
+        }
+
+        a.active {
+            background-color: goldenrod;
+            color: white;
+            opacity: 0.6;
+        }
+
+        a:hover:not(.active) {
+            color: white;
+            opacity: 0.8;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination">
+        <a href="#">Prev</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next</a>
+
+    </div>
+</body>
+
+</html>
