@@ -1,0 +1,42 @@
+<!-- write html and css script to design one table having 5 rows and 3 columns add random data in it 
+ while hovering on row it should expand around 50% individually.background-color and color will become
+ tomato and cyan.exapnsion should take place in 5 seconds,the content inside table having text size of
+ 20px.first row has italic style content in last row has underlines.-->
+<html>
+    <head>
+        <style>
+            tr{width: 400px;transition-duration: 5s;transition-property: transform;}
+            tr:hover{background-color:tomato;color: cyan;font-size: 20px;transform: scaleX(1.5);}
+        </style>
+    </head>
+    <body>
+        <table rules="all" style="border: 1px;" align="center">
+            <tr style="font-style: italic;">
+                <td>abc</td>
+                <td>efg</td>
+                <td>ijkl</td>
+            </tr>
+            <tr>
+                <td>mn</td>
+                <td>op</td>
+                <td>qr</td>
+            </tr>
+            <tr>
+                <td>rs</td>
+                <td>dfhd</td>
+                <td>fdd</td>
+            </tr>
+            <tr>
+                <td>hd</td>
+                <td>dfhdf</td>
+                <td>dfhdf</td>
+            </tr>
+            <tr style="text-decoration: underline;">
+                <td>fsgf</td>
+                <td>fhfs</td>
+                <td>sfhsf</td>
+            </tr>
+            
+        </table>
+    </body>
+</html>

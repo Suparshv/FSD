@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <style>
+        .s {
+            width: 600px;
+            height: 400px;
+            border: 1px solid black
+        }
+
+        .a {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            border-radius: 50%;
+            text-align: center;
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-direction: normal;
+        }
+
+        .b {
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            text-align: center;
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-direction: normal;
+        }
+
+        .c {
+            position: absolute;
+            top: 250px;
+            left: 400px;
+            width: 100px;
+            height: 100px;
+            border-style: solid dotted double dashed;
+            border-radius: 50%;
+            text-align: center;
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-direction: normal;
+        }
+
+        @keyframes animate {
+            0% {}
+
+            50% {
+                .a {
+                    top: 150px
+                }
+
+                .c {
+                    top: 150px
+                }
+            }
+
+            100% {}
+        }
+    </style>
+</head>
+
+<body>
+    <div class="s">
+        <div class="a">L</div>
+        <div class="b">J</div>
+        <div class="c">U</div>
+    </div>
+</body>
+
+</html>
