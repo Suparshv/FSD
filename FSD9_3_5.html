@@ -1,0 +1,33 @@
+<!-- meta char
+     ^ -- must start with
+     * -- zero or more time occurance
+     $ -- end with
+     \w -- [a-z],[A-Z],[0-9],"_"
+     \W -- opposite to \w or [a-z],[A-Z],[0-9],"_" alone should not be present
+     \d -- [0-9] is allowed
+     \D -- alone digit should not allowed
+     + -- one or more time occurance
+     ? -- zero or more time occurance-->
+<html>
+
+<body>
+    Username : <input type="text" name="fname" id="t1"><br><br>
+    Phone : <input type="tel" id="t2">
+    <input type="submit" value="submit" onclick="fun1()">
+    <script>
+        function fun1() {
+            user = /^[A-Z]+$/
+            phone=/^\d{10}$/
+            u = document.getElementById("t1").value
+            p = document.getElementById("t2").value
+            if (user.test(u) && phone.test(p)) {
+                alert("Perfect")
+            }
+            else {
+                alert("Not perfect")
+            }
+        }
+    </script>
+</body>
+
+</html>
